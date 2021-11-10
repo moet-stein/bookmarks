@@ -1,14 +1,22 @@
 import React from "react";
-import './App.css';
+import "./App.css";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import NavBar from "./components/NavBar";
+import Home from "./views/Home";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "Lato, Arial",
+  },
+});
 
 const App = () => {
   return (
-      <div className="container">
-          <div className="header">
-              <h1>Welcome to React application</h1>
-          </div>
-      </div>
-  )
-}
+    <ThemeProvider theme={theme}>
+      <NavBar />
+      <Home />
+    </ThemeProvider>
+  );
+};
 
 export default App;
