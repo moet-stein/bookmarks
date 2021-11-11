@@ -1,0 +1,16 @@
+.logPos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: 70px;
+}
+
+.bookmarkLogo {
+  display: flex;
+  align-items: center;
+}

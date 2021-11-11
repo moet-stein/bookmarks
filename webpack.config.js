@@ -1,4 +1,6 @@
 const path = require("path");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
@@ -16,7 +18,7 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(jpg|png|svg|ico)$/,
         use: {
           loader: "url-loader",
         },
@@ -30,4 +32,10 @@ module.exports = {
     path: path.resolve(__dirname, "./public"),
     filename: "bundle.js",
   },
+  plugins: [
+    new FaviconsWebpackPlugin("./public/favicon.ico"),
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+    }), // svg works too!
+  ],
 };
