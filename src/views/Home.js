@@ -4,7 +4,7 @@ import { Typography } from "@mui/material";
 const Home = () => {
   return (
     <Typography align="center" variant="h1">
-      Bookmark HOME PAGE
+      BookmarK HOME PAGE
     </Typography>
   );
 };
