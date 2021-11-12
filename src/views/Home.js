@@ -3,8 +3,8 @@ import { Typography } from "@mui/material";
 
 const Home = () => {
   return (
-    <Typography align="center" variant="h1">
-      BOOKMARK HOME PAGE
+    <Typography align="center" variant="h3">
+      Moe's Bookmarks PAGE
     </Typography>
   );
 };

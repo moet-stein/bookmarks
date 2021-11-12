@@ -13,4 +13,9 @@
 .bookmarkLogo {
   display: flex;
   align-items: center;
+  color: orange;
+}
+
+.bmImg {
+  width: 30px;
 }
