@@ -7,3 +7,11 @@
 .buttons {
   margin-top: 30px;
 }
+
+.flex {
+  display: flex;
+}
+
+.buttonMargin {
+  margin: 10px !important;
+}
