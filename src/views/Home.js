@@ -8,7 +8,7 @@ const Home = () => {
     <React.Fragment>
       <div className={classes.topPart}>
         <Typography align="center" variant="h3">
-          Moe's Bookmarks PAGE
+          Moe's Bookmarks
         </Typography>
         <div className={classes.buttons}>
           <AddGroup />
