@@ -1,0 +1,9 @@
+.topPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  margin-top: 30px;
+}
