@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./styles/NavBar.module.css";
 import Logo from "../img/logo.png";
 import { Typography } from "@mui/material";
-import favicon from "../../public/favicon.ico";
+import favicon from "../img/icon.svg";
 
 export default function NavBar() {
   return (

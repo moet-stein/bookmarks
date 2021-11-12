@@ -4,7 +4,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
-  entry: path.resolve(__dirname, "./src/index.js"),
+  entry: "./src/index.js",
+  output: {
+    path: path.resolve(__dirname, "./public"),
+    filename: "bundle.js",
+  },
   devtool: "eval-source-map",
   module: {
     rules: [
@@ -28,14 +32,11 @@ module.exports = {
   resolve: {
     extensions: ["*", ".js", ".jsx"],
   },
-  output: {
-    path: path.resolve(__dirname, "./public"),
-    filename: "bundle.js",
-  },
+
   plugins: [
-    new FaviconsWebpackPlugin("./public/favicon.ico"),
+    new FaviconsWebpackPlugin("./src/img/icon.svg"),
     new HtmlWebpackPlugin({
-      template: "./public/index.html",
-    }), // svg works too!
+      template: "./src/index.html",
+    }),
   ],
 };
