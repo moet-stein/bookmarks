@@ -1,31 +1,13 @@
-import React from "react";
-import "./App.css";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Home from "./views/Home.js";
 import NavBar from "./components/NavBar";
-import { grey } from "@mui/material/colors";
-import Home from "./views/Home";
 
-const theme = createTheme({
-  typography: {
-    fontFamily: "Lato, Arial",
-  },
-  palette: {
-    primary: {
-      main: "#ff6900",
-    },
-    secondary: {
-      main: grey[500],
-    },
-  },
-});
-
-const App = () => {
+function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <div>
       <NavBar />
       <Home />
-    </ThemeProvider>
+    </div>
   );
-};
+}
 
 export default App;
